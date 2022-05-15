@@ -5,11 +5,12 @@ stages
 {stage('scm checkout')
 {steps {git 'https://github.com/deveopsuser/maven-project'}
 }
-{ stage( 'code compile')
+ stage( 'code compile')
 {steps{withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'maven-01', mavenSettingsConfig: 'null')
 { sh 'mvn compile' }
+}}
+
+
 }
 }
-}
-}
-}
+
