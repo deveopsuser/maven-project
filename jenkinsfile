@@ -9,6 +9,6 @@ stage
 steps 
 {git 'https://github.com/deveopsuser/maven-project'}
 
+ }
 }
-  
 }
