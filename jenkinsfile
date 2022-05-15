@@ -8,7 +8,7 @@ stages
 { stage( 'code compile')
 {steps{withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'maven-01', mavenSettingsConfig: 'null')
 { sh 'mvn compile' }
-}}
+}
 }
 }
 }
