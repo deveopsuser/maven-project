@@ -6,7 +6,7 @@ stages
 {steps {git 'https://github.com/deveopsuser/maven-project'}
 }
  stage( 'code compile')
-{steps{withMaven(globalMavenSettingsConfig: 'null', jdk: 'jdk', maven: 'maven-01', mavenSettingsConfig: 'null')
+{steps{withMaven(globalMavenSettingsConfig: 'null', jdk: 'jdk', maven: 'maven-01)
 { sh 'mvn compile' }
 }}
 
