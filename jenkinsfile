@@ -10,8 +10,6 @@ stages
 { sh 'mvn compile' }
 }}
 
-
-
 }
 }
 
