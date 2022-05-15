@@ -2,13 +2,8 @@ pipeline
 {
 agent any
 stages
-{
-stage
-('scm checkout')
-{
-steps 
-{git 'https://github.com/deveopsuser/maven-project'}
-
- }
+{stage('scm checkout')
+{steps {git 'https://github.com/deveopsuser/maven-project'}
+}
 }
 }
